@@ -1,0 +1,32 @@
+Package: IntegratingKnowledgeData
+Title: Integrating gene expression and biological knowledge for drug discovery and repurposing
+Version: 0.0.1
+Authors@R: 
+    person(given = "Mahmoud",
+           family = "Ahmed",
+           role = c("aut", "cre"),
+           email = "mahshaaban@gnu.ac.kr",
+           comment = c(ORCID = "0000-0002-4377-6541"))
+Description: a code walkthrough encoding directed interactions into the 
+    biological expression language (BEL), computing the network perturbation 
+    amplitudes (NPA), and interpreting the output.
+License: CC-BY-4.0 + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Depends: 
+    Biobase
+Imports:
+    readr,
+    dplyr,
+    igraph,
+    NPA
+Suggests: 
+    knitr,
+    rmarkdown,
+    pkgdown
+URL: https://github.com/MahShaaban/integrating_knowledge_data
+BugReports: https://github.com/MahShaaban/integrating_knowledge_data/issues/new/choose
+VignetteBuilder: knitr
+DockerImage: mahshaaban/integrating_knowledge_data

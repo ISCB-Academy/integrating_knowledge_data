@@ -1,0 +1,9 @@
+^LICENSE$
+.github
+Dockerfile
+_pkgdown.yml
+^.*\.Rproj$
+^\.Rproj\.user$
+data/
+^_pkgdown\.yml$
+^pkgdown$

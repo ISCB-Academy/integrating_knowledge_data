@@ -1,0 +1,12 @@
+[submodule "62429e30b8762535c08cf128"]
+	path = 62429e30b8762535c08cf128
+	url = https://git.overleaf.com/62429e30b8762535c08cf128
+[submodule "62429e45b876255fa68cf41b"]
+	path = 62429e45b876255fa68cf41b
+	url = https://git.overleaf.com/62429e45b876255fa68cf41b
+[submodule "Part_3_code-walkthrough/pkgs/NPA"]
+	path = Part_3_code-walkthrough/pkgs/NPA
+	url = https://github.com/MahShaaban/NPA
+[submodule "Part_3_code-walkthrough/pkgs/NPAModels"]
+	path = Part_3_code-walkthrough/pkgs/NPAModels
+	url = https://github.com/MahShaaban/NPAModels
