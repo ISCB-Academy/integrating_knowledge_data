@@ -4,8 +4,11 @@ These materials will be delivered as part of the ISCB Academy webinar series on
 April 22, 2022 at 8:00 AM EDT.
 
 ---
+## Setup
 
-Download the materials and the docker environment using the following code
+To follow through the code, you can choose one of the following options. 
+
+1. Download the materials and the docker environment using the following code
 
 ```bash
 # clone this repo
@@ -13,8 +16,36 @@ git clone --recurse-submodules https://github.com/MahShaaban/integrating_knowled
 
 # pull the docker image
 docker pull mahshaaban/integrating_knowledge_data:latest
+
+# run the docker container
+docker run -it --rm \
+    -p 8787:8787 -e PASSWORD=rstudio \
+    -v $(pwd)/integrating_knowledge_data:/home/rstudio \
+    mahshaaban/integrating_knowledge_data:latest
 ```
 
+2. Alternatively, create and run a project on [RStudio Cloud](https://rstudio.cloud/)
+using this repo (The free tier works fine)
+
+    - Log in your RStudio Cloud account
+    - New Project > New Project from Git Repository
+    - Copy & paste this URL 
+"https://github.com/MahShaaban/integrating_knowledge_data"
+
+There you need to start by installing the required packages
+
+```r
+# to run the code in part 3
+install.packages('igraph')
+remotes::install_github('MahShaaban/NPAModels')
+remotes::install_github('MahShaaban/NPA')
+
+# to render rmarkdown files
+install.packages(c("base64enc", "htmltools", "markdown", "rmarkdown"))
+```
+
+3. You can clone the repo, and install the required packages on your local machine
+using the code above.
 ---
 
 # Integrating gene expression and biological knowledge for drug discovery and repurposing
