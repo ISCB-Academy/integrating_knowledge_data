@@ -52,7 +52,9 @@ individual components.
 
 The following figure summarizes this workflow
 
-![](images/workflow.png)
+```{r, echo=FALSE, fig.align='center', out.width="70%", fig.cap="A workflow for building, refining, and evaluating a breast cancer-specific network model of metastasis."}
+knitr::include_graphics("images/workflow.png")
+```
 
 The third part of the workshop, explains the code behind this work.
 Admittedly, the code is a bit simplified, but hopefully would be enough to get
@@ -208,7 +210,7 @@ interaction_graph <- graph.data.frame(
 
 Here is a very simple  visual of the interactions and the distributions of their degrees.
 
-```{r show_graph}
+```{r show_graph, fig.align='center', out.width="70%", fig.cap="Interactions graph and node degrees."}
 # calculate the node degree
 node_degrees <- degree(interaction_graph)
 V(interaction_graph)$size <- node_degrees
@@ -294,10 +296,12 @@ Here we show that there is variability in the effect of knocking down some of
 these nodes on the expression of other genes. This is expected given the fact
 that many of the nodes are transcription factors and co-factor.
 
-```{r summarize_knockdowns}
-par(mfrow = c(1, 1))
+```{r summarize_knockdowns, fig.align='center', out.width="70%", fig.cap="The number of significantly changed downstream targets."}
+# tabulate the nodes by direction of change
 tab <- with(knockdown_diff_expr, table(Direction, Source.Node))
 
+# plot the number of targets
+par(mfrow = c(1, 1))
 barplot(tab[1,] * -1,
         ylim = c(-max(tab), max(tab)),
         las = 2,
@@ -419,7 +423,7 @@ The effect of these drugs differs in terms of the genes they affect. Here I show
 the total number of differentially expressed genes and visualize that of 
 cisplatin as an example.
 
-```{r example}
+```{r example, fig.align='center', out.width="70%", fig.cap="The number of differentially expressed genes and cisplatin example (volcano plot)"}
 par(mfrow = c(1, 2))
 # show the numbers of differentially expressed genes
 ind <- with(treatment_diff_expr, abs(logFC) > 1 & P.Value < .05)
@@ -528,7 +532,7 @@ conf.int(npa_metastasis)
 
 These can be visually inspected using `barplot`
 
-```{r plot_coeffs}
+```{r plot_coeffs, fig.align='center', out.width="70%", fig.cap="Network perturbation amplitudes of five drugs"}
 # plot using the built in functions
 barplot(npa_metastasis)
 # barplot(npa_metastasis, type = 2)
@@ -552,7 +556,7 @@ NPA score.
 The top leading nodes can be inspected visually by calling `plot()` on the 
 object.
 
-```{r plot_nodes}
+```{r plot_nodes, fig.align='center', out.width="70%", fig.cap="NPA differential values (heatmap)"}
 # plot using built in function
 plot(npa_metastasis)
 ```
