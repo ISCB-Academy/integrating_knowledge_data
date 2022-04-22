@@ -243,7 +243,7 @@ knockdown_diff_expr <- read_csv('data/knockdown_diff_expr.csv')
 
 The dataset is quite long. It consists of the fold-change, `FC`, and p-value,
 `PVAL` of knocking down each node, `KD`, on all genes, `ID`. `Type` records
-whether the target gene is a transcription factor or a metastatic suppressor 
+whether the target gene is a transcription factor or a metastatsis suppressor 
 gene. Those are the two categories we chose to include in the backbone.
 
 ```{r str_knockdowns}
@@ -570,11 +570,11 @@ default.
 
 - Three types of data are required to run this analysis workflow:
     - Directed interactions to form a backbone layer
-    - Expression changes in response to manipulative the backbone nodes
+    - Expression changes in response to manipulating the backbone nodes
     - Treatment effects to be scored as to how they affect this network
 - Other than some data filtering and reshaping, two packages are required to run
 the entire workflow; `NPA` and `NPAModels`
-- The output put of the analysis is biologically straight forward to interpret
+- The output of the analysis is biologically straight forward to interpret
     - The NPA score indicates the magnitude and direction of perturbation of the
     network function in response to a given treatment.
     - The differential values of the nodes are expected changes in activity in
