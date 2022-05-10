@@ -1,0 +1,31 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Integrating gene expression and biological
+  knowledge for drug discovery and repurposing
+message: 'Please cite these materials as follow:'
+type: software
+authors:
+  - given-names: Mahmoud Ahmed
+    affiliation: Gyeongsang National Univeristy
+    orcid: 'https://orcid.org/0000-0002-1041-4464'
+  - given-names: Trang Huyen Lai
+    affiliation: Gyeongsang National Univeristy
+    orcid: 'https://orcid.org/0000-0003-3448-6558'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.6517322
+repository-code: >-
+  https://github.com/ISCB-Academy/integrating_knowledge_data
+url: >-
+  https://github.com/ISCB-Academy/integrating_knowledge_data
+repository: >-
+  https://github.com/ISCB-Academy/integrating_knowledge_data
+abstract: "Screening for potential cancer therapies using existing large datasets of drug perturbations requires expertise and resources not available to all. This is often a barrier for lab scientists to tap into these valuable resources. To address these issues, one can take advantage of prior knowledge, especially those coded in standard formats such as causal biological networks (CBN). Large datasets can be converted into appropriate structures, analyzed once, and the results made freely available in easy-to-use formats. In these three parts tutorials, we will give a full description of one large scale analysis of using this approach, one case study of building a network of metastasis suppressors from scratch, and a walkthrough example code to perform and adapt these tools for different use cases.\n\n\_A\_code walkthrough encoding directed interactions into the biological expression language (BEL), computing the network perturbation amplitudes (NPA), and interpreting the output.\n\n"
+keywords:
+  - biological expression language
+  - gene expression
+  - drug discovery
+license: CC-BY-4.0
