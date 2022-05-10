@@ -1,4 +1,6 @@
 [![Build and push Docker image](https://github.com/MahShaaban/integrating_knowledge_data/actions/workflows/docker-image.yml/badge.svg)](https://github.com/MahShaaban/integrating_knowledge_data/actions/workflows/docker-image.yml)
+[![DOI](https://zenodo.org/badge/475292319.svg)](https://zenodo.org/badge/latestdoi/475292319)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 These materials will be delivered as part of the ISCB Academy webinar series on
 April 22, 2022 at 8:00 AM EDT.
