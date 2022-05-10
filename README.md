@@ -2,8 +2,11 @@
 [![DOI](https://zenodo.org/badge/475292319.svg)](https://zenodo.org/badge/latestdoi/475292319)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-These materials will be delivered as part of the ISCB Academy webinar series on
+These materials was delivered as part of the ISCB Academy webinar series on
 April 22, 2022 at 8:00 AM EDT.
+
+### Cite as:
+> Mahmoud Ahmed, & Trang Huyen Lai. (2022, May 10). Integrating gene expression and biological knowledge for drug discovery and repurposing. Zenodo. https://doi.org/10.5281/zenodo.6534994
 
 
 # Integrating gene expression and biological knowledge for drug discovery and repurposing
